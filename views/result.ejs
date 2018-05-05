@@ -1,0 +1,17 @@
+<% include partials/header %>
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+
+<div class="container" id="index-wrapper">
+	<h3 id="lighter">Submission for <strong><span style="color: blue;font-weight: lighter;">OpenGenus</span></strong> Software Engineer Intern</h3><br>
+	<h4>The Url Size in bytes: <strong><span style="color: blue;font-weight: lighter;"><%= urlSize %></span></strong></h4>
+	<h4>Number of Links to the same domain: <strong><span style="color: blue;font-weight: lighter;"><%= linkToSameDomain.length %></span></strong></h4><br>
+	<table class="table table-bordered">
+		<th>The Domain Absolute paths :</th>
+	<% for(var i = 0;i < linkToSameDomain.length;i++){ %>
+		<tr>
+			<td><%= linkToSameDomain[i] %></td>
+		</tr>
+	<% } %>		
+	</table>
+</div>

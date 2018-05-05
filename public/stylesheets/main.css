@@ -1,0 +1,23 @@
+#index-wrapper{
+	width: 50%;
+	margin-top: 2em;
+}
+#sorted-wrapper{
+	width: 40%;
+	margin-top: 2em;
+}
+
+#lighter {
+	font-family: Open Sans;
+	font-weight: lighter;
+}
+#nav-head{
+	width: 100%;
+	padding: 2em;
+	background-color: #000000;
+}
+#brand{
+	color: white;
+	font-weight: lighter;
+	font-size: 26px;
+}
