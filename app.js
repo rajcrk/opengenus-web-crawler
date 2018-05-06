@@ -15,8 +15,10 @@ app.get("/", function(req, res){
 	res.render("index");
 });
 app.post("/submit", function(req, res){
+	//Just Some Initial Work 
 	var sizeDisplay;
 	var linkToSameDomain = [];
+	//Checking if it is a Valid url
 	var pageToVisit = req.body.URLvalue;
 	//Actual Computation
 	var url = new URL(pageToVisit);
@@ -90,5 +92,5 @@ app.post("/submit", function(req, res){
 });
 
 app.listen(4400, function(){
-	console.log("Opened on 4400");
+	console.log("Server running at http://localhost:4400/");
 });
